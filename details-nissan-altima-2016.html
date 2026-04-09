@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nissan Altima 2016 - LastBorn Motors</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-enter">
+  <header class="header" id="header"><div class="container"><div class="header-inner"><a href="index.html" class="logo"><div class="logo-icon">LB</div><span class="logo-text">LastBorn <span>Motors</span></span></a><nav><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="listings.html">Inventory</a></li></ul></nav><div class="header-cta"><a href="https://wa.me/2349110138677" class="btn btn-whatsapp">WhatsApp</a></div></div></div></header>
+  <section class="details-section"><div class="container"><a href="javascript:history.back()" class="back-btn">← Back to Inventory</a><div class="details-grid"><div class="gallery"><div class="gallery-main"><img src="images/nissan_altima_2016/IMG_2038.jpeg" alt="Nissan Altima 2016"></div><div class="gallery-thumbs"><img src="images/nissan_altima_2016/IMG_2038.jpeg" alt="View 1" class="active" onclick="changeImage(this)"><img src="images/nissan_altima_2016/IMG_2041.jpeg" alt="View 2" onclick="changeImage(this)"><img src="images/nissan_altima_2016/IMG_2042.jpeg" alt="View 3" onclick="changeImage(this)"><img src="images/nissan_altima_2016/IMG_2045.jpeg" alt="View 4" onclick="changeImage(this)"><img src="images/nissan_altima_2016/IMG_2046.jpeg" alt="View 5" onclick="changeImage(this)"><img src="images/nissan_altima_2016/IMG_2047.jpeg" alt="View 6" onclick="changeImage(this)"><img src="images/nissan_altima_2016/IMG_2048.jpeg" alt="View 7" onclick="changeImage(this)"><img src="images/nissan_altima_2016/IMG_2052.jpeg" alt="View 8" onclick="changeImage(this)"><img src="images/nissan_altima_2016/IMG_2055.jpeg" alt="View 9" onclick="changeImage(this)"></div></div><div class="details-info"><h1 class="details-title">Nissan Altima 2016</h1><p class="details-price">₦10,600,000</p><div class="details-tags"><span class="details-tag tag-foreign">Foreign Used</span><span class="details-tag tag-neat">Quality Inspected</span></div><p class="details-description">Modern and stylish Nissan Altima 2016. Excellent condition with advanced features and great fuel economy.</p><div class="details-cta"><a href="tel:+2348034768934" class="btn btn-primary">Call: 08034768934</a><a href="tel:+2349063885910" class="btn btn-primary">Call: 09063885910</a><a href="https://wa.me/2349110138677" class="btn btn-whatsapp">WhatsApp</a></div></div></div></div></section>
+  <footer class="footer"><div class="container"><div class="footer-grid"><div><h3>LastBorn Motors</h3><p>Your trusted destination for premium foreign used vehicles.</p></div><div><h3>Contact</h3><a href="tel:+2348034768934">08034768934</a><a href="tel:+2349063885910">09063885910</a></div><div><h3>Follow Us</h3><p>@LastBornMotors</p></div></div><div class="footer-bottom"><p>&copy; 2024 LastBorn Motors. All rights reserved.</p></div></div></footer>
+  <div class="floating-whatsapp"><a href="https://wa.me/2349110138677" target="_blank">💬</a></div>
+  <script>const header = document.getElementById('header');window.addEventListener('scroll', () => { if (window.scrollY > 50) header.classList.add('scrolled'); else header.classList.remove('scrolled'); });function changeImage(thumb) { document.querySelector('.gallery-main img').src = thumb.src; document.querySelectorAll('.gallery-thumbs img').forEach(img => img.classList.remove('active')); thumb.classList.add('active'); }</script>
+</body>
+</html>
