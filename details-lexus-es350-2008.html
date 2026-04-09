@@ -13,12 +13,12 @@
   <header class="header" id="header">
     <div class="container">
       <div class="header-inner">
-        <a href="index.html" class="logo">
-          <div class="logo-icon">LB</div>
+        <a href="index.html" class="logo"><div class="menu-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+          <img src="logo.png" alt="LastBorn Motors" class="logo-icon">
           <span class="logo-text">LastBorn <span>Motors</span></span>
         </a>
         <nav>
-          <ul class="nav-links">
+          <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
             <li><a href="listings.html">Inventory</a></li>
           </ul>
@@ -98,7 +98,7 @@
       if (window.scrollY > 50) header.classList.add('scrolled');
       else header.classList.remove('scrolled');
     });
-    function changeImage(thumb) {
+    function toggleMenu(){document.getElementById("navLinks").classList.toggle("active");}function changeImage(thumb) {
       document.querySelector('.gallery-main img').src = thumb.src;
       document.querySelectorAll('.gallery-thumbs img').forEach(img => img.classList.remove('active'));
       thumb.classList.add('active');
